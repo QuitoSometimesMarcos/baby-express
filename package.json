@@ -1,0 +1,15 @@
+{
+  "name": "baby-node",
+  "version": "1.0.0",
+  "description": "first node exercises",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "feychoo@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
