@@ -83,9 +83,9 @@ We pass an array to our page `/test-ejs2`:
 
 Create an EJS page that uses the `forEach` method to list each element.
 
-### Exercise 7 ([Help](http://expressjs.com/en/api.html#req.query))
+### Exercise 7 ([Help](https://ejs.co/))
 
-Create a template with two **input:text** fields to enter the first and last name and send it on the `/showGet` route.
+Create a template with two **input:text** fields to enter the first and last name and send it on the `/test-ejs3` route.
 
 Show it on our page an array to our page `/test-ejs3`:
 
