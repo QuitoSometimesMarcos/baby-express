@@ -74,8 +74,14 @@ Create a directory `views` under the root directory of your project. Add a file 
 </body>
 </html>
 ```
-
 Render this EJS code if the user accesses the URL `/test-ejs` and render this page with `Hey` as value of `title` variable.
+
+Remember that in `app.js`, you need to define the directory of your views and the name of the template engine you are using this way:
+```
+app.set('views', './views');
+app.set('view engine', 'ejs');
+```
+Keep these lines before the routes for better organisation.
 
 ### Exercise 6 ([Help](https://ejs.co/))
 
