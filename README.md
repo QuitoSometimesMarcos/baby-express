@@ -74,4 +74,4 @@ Render this EJS code if the user accesses the URL `/test-ejs` and render this pa
   <% } %>
 </body>
 </html>
-```c
+```
