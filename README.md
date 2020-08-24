@@ -97,7 +97,7 @@ Create a template with two **input:text** fields to enter the first and last nam
 
 ### Exercise 8 ([Help](https://github.com/expressjs/body-parser))
 
-Create a form (using the method POST) with two **input:text** fields to enter the first and last name and send it on the `/test-ejs3` route.
+Submit the first and last name to `/test-ejs3` _POST_ route.
 
 Display in the console the result of the _POST_ as a json with fields `name` and `surname`.
 
