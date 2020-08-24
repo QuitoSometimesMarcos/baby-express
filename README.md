@@ -93,9 +93,7 @@ Create an EJS page that uses the `forEach` method to list each element.
 
 ### Exercise 7 ([Help](https://ejs.co/))
 
-Create a template with two **input:text** fields to enter the first and last name and send it on the `/test-ejs3` route.
-
-Show it on our page an array to our page `/test-ejs3`:
+Create a template with two **input:text** fields to enter the first and last name and show it on the `/test-ejs3` route.
 
 ### Exercise 8 ([Help](https://github.com/expressjs/body-parser))
 
