@@ -58,7 +58,7 @@ Try out your request with postman or curl.
 
 ### Exercise 5 ([Help](https://ejs.co/) && [Help](http://expressjs.com/guide/using-template-engines.html) && [Help](https://scotch.io/tutorials/use-ejs-to-template-your-node-application))
 
-Render this EJS code if the user accesses the URL `/test-ejs` and render this page with `Hey` as value of `title` variable.
+Create a directory `views` under the root directory of your project. Add a file with this template in:
 
 ```html
 <!DOCTYPE html>
@@ -74,6 +74,8 @@ Render this EJS code if the user accesses the URL `/test-ejs` and render this pa
 </body>
 </html>
 ```
+
+Render this EJS code if the user accesses the URL `/test-ejs` and render this page with `Hey` as value of `title` variable.
 
 ### Exercise 6 ([Help](https://ejs.co/))
 
