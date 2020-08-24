@@ -95,4 +95,11 @@ Create a form (using the method POST) with two **input:text** fields to enter th
 
 Display in the console the result of the _POST_ as a json with fields `name` and `surname`.
 
+### Exercise 9 ([Help](http://expressjs.com/en/api.html#req.param))
+
+Create a route of the type `/number/1`  where the number will be a variable `:id` and will be displayed on the page. E.g. on the route `/number/1337` we will see:
+
+```
+The number is 1337
+```
 
