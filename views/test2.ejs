@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <% if (title) { %>
+    <h1><%= title %></h1>
+  <% } %>
+  <ul>
+    <% users.forEach((user) => { %>
+      <li>Hey <%- user %>! How are you?</li>
+    <% }); %>
+  </ul>
+</body>
+</html>
