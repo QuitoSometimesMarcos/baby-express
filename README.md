@@ -122,3 +122,13 @@ To see the newest changes, you'll still have to reload the browser.
 
 Nodemon is only for development use, that's why it's wise to add another entry to your package.json scripts: `"start-prod": "node app.js"`. This is the command you are going to run when you app is deployed on a remote host.
 
+Your `scripts` entry in `package.json` should now look like this:
+
+```
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "nodemon app.js",
+  "start-prod": "node app.js"
+}
+```
+
