@@ -111,3 +111,14 @@ Create a route of the type `/number/1`  where the number will be a variable `:id
 The number is 1337
 ```
 
+### Exercise 10 ([Help](https://www.npmjs.com/package/nodemon))
+
+If you are tired of always restarting the server, [nodemon](https://www.npmjs.com/package/nodemon) can come to the rescue.
+Install it like this `npm i nodemon --save-dev` (this will also add a new entry under `devDependencies` in your `package.json`).
+Change the `npm start` script in the `package.json` to be `nodemon app.js`.
+
+Now restart the server; you server will automatically reload on file change.
+To see the newest changes, you'll still have to reload the browser.
+
+Nodemon is only for development use, that's why it's wise to add another entry to your package.json scripts: `"start-prod": "node app.js"`. This is the command you are going to run when you app is deployed on a remote host.
+
