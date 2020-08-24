@@ -6,7 +6,6 @@ Create a folder `exercises_express` then go to this folder in your terminal and 
 npm init -y
 ```
 
-
 ### Exercise 1 ([Help](http://expressjs.com/guide/routing.html))
 
 Install express into your directory with the `npm install express` command.
@@ -80,16 +79,20 @@ Render this EJS code if the user accesses the URL `/test-ejs` and render this pa
 
 We pass an array to our page `/test-ejs2`:
 
-```js
-{
-  users : ['Bob', 'John', 'Jane' ]
-}
-```
+`{users : ['Bob', 'John', 'Jane' ]}`
 
 Create an EJS page that uses the `forEach` method to list each element.
 
-### Exercise 6 ([Help](https://github.com/expressjs/body-parser))
+### Exercise 7 ([Help](http://expressjs.com/en/api.html#req.query))
 
-Create a form (using the method POST) with two **input:text** fields to enter the first and last name and send it on the `/showPost` route.
+Create a template with two **input:text** fields to enter the first and last name and send it on the `/showGet` route.
+
+Show it on our page an array to our page `/test-ejs3`:
+
+### Exercise 8 ([Help](https://github.com/expressjs/body-parser))
+
+Create a form (using the method POST) with two **input:text** fields to enter the first and last name and send it on the `/test-ejs3` route.
 
 Display in the console the result of the _POST_.
+
+
