@@ -56,3 +56,22 @@ The JSON will look like this:
 
 In `app.js`, get express to send this json when hitting the route `home` with the method _PUT_.
 Try out your request with postman or curl.
+
+### Exercise 5 ([Help](https://ejs.co/) && [Help](http://expressjs.com/guide/using-template-engines.html) && [Help](https://scotch.io/tutorials/use-ejs-to-template-your-node-application))
+
+Render this EJS code if the user accesses the URL `/test-ejs` and render this page with `my first title` as value of `myTitle` variable.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <% if (myTitle) { %>
+    <h1><%= myTitle %></h1>
+  <% } %>
+</body>
+</html>
+```c
