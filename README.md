@@ -85,7 +85,7 @@ Keep these lines before the routes for better organisation.
 
 ### Exercise 6 ([Help](https://ejs.co/))
 
-We pass an array to our page `/test-ejs2`:
+We pass an array to our new page `/test-ejs2`:
 
 `{users : ['Bob', 'John', 'Jane' ]}`
 
