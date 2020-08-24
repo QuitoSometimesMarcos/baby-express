@@ -75,3 +75,15 @@ Render this EJS code if the user accesses the URL `/test-ejs` and render this pa
 </body>
 </html>
 ```
+
+### Exercise 5 ([Help](https://ejs.co/))
+
+We pass an array to our page `/test-ejs2`:
+
+```js
+{
+  users : ['Bob', 'John', 'Jane' ]
+}
+```
+
+Create an EJS page that uses the `forEach` method to list each element.
