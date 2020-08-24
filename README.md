@@ -92,4 +92,4 @@ Create an EJS page that uses the `forEach` method to list each element.
 
 Create a form (using the method POST) with two **input:text** fields to enter the first and last name and send it on the `/showPost` route.
 
-Display in the console the result of the POST.
+Display in the console the result of the _POST_.
