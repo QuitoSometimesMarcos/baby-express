@@ -59,7 +59,7 @@ Try out your request with postman or curl.
 
 ### Exercise 5 ([Help](https://ejs.co/) && [Help](http://expressjs.com/guide/using-template-engines.html) && [Help](https://scotch.io/tutorials/use-ejs-to-template-your-node-application))
 
-Render this EJS code if the user accesses the URL `/test-ejs` and render this page with `my first title` as value of `myTitle` variable.
+Render this EJS code if the user accesses the URL `/test-ejs` and render this page with `Hey` as value of `title` variable.
 
 ```html
 <!DOCTYPE html>
@@ -69,8 +69,8 @@ Render this EJS code if the user accesses the URL `/test-ejs` and render this pa
   <title>Document</title>
 </head>
 <body>
-  <% if (myTitle) { %>
-    <h1><%= myTitle %></h1>
+  <% if (title) { %>
+    <h1><%= title %></h1>
   <% } %>
 </body>
 </html>
