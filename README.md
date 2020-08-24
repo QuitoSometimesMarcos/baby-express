@@ -76,7 +76,7 @@ Render this EJS code if the user accesses the URL `/test-ejs` and render this pa
 </html>
 ```
 
-### Exercise 5 ([Help](https://ejs.co/))
+### Exercise 6 ([Help](https://ejs.co/))
 
 We pass an array to our page `/test-ejs2`:
 
@@ -87,3 +87,9 @@ We pass an array to our page `/test-ejs2`:
 ```
 
 Create an EJS page that uses the `forEach` method to list each element.
+
+### Exercise 6 ([Help](https://github.com/expressjs/body-parser))
+
+Create a form (using the method POST) with two **input:text** fields to enter the first and last name and send it on the `/showPost` route.
+
+Display in the console the result of the POST.
