@@ -34,7 +34,7 @@ app.get('/test-ejs3', (req, res) => {
 });
 
 app.post('/test-ejs3', (req, res) => {
-  console.log(req.body);
+  console.log(JSON.stringify(req.body));
   res.json(req.body)
 });
 
