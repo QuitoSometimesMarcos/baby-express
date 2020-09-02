@@ -7,6 +7,15 @@ const app = express();
 const publicFolder = path.join(__dirname, 'public');
 const uploadFolder = path.join(publicFolder, 'uploads');
 
+const fileFilter = (req, file, cb) => {
+  // Accept image file types only
+  if (!file.originalname.match(/\.(jpg|JPG|jpeg|JPEG|png|PNG|gif|GIF)$/)) {
+    req.fileValidationError = 'Only image files are allowed!';
+    return cb(new Error('Only image files are allowed!'), false);
+  }
+  cb(null, true);
+};
+
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, uploadFolder)
@@ -15,7 +24,7 @@ const storage = multer.diskStorage({
     cb(null, `${Date.now()}-${file.originalname}`)
   }
 })
-const upload = multer({ storage })
+const upload = multer({ storage, fileFilter })
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(publicFolder));
@@ -39,9 +48,6 @@ app.post('/upload-profile-picture', upload.single('profile_pic'), (req, res) => 
   const { file, fileValidationError } = req
   if (!file) {
     return res.status(400).send('Please upload a file');
-  }
-  if (fileValidationError) {
-    return res.status(400).send(fileValidationError);
   }
   console.log(file)
   res.send(`<div>You have uploaded this image: <br/> <img src="http://localhost:3000/uploads/${req.file.filename}" width="500" /></div>`);
